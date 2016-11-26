@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
     fstream file;//creating stream object
-    file.open("satyam.txt",ios :: in | ios :: out | ios :: trunc);//Opening a file
+    file.open("abc.txt",ios :: in | ios :: out | ios :: trunc);//Opening a file
     if(!file.is_open()){                            //Checking for file 
         cout<<"Error while opening the file"<<endl;
     } else {
