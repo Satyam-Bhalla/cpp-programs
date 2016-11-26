@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-    //ofstream file("satyam.txt",ios :: app);
+    
     ofstream file("satyam.txt");
     if(!file.is_open()){
         cout<< "File not opened";
