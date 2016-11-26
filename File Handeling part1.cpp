@@ -1,17 +1,16 @@
+//Program to open a file if existing or to make a new file
 #include<iostream>
-#include<fstream>
+#include<fstream>//Header file for file operations
 using namespace std;
-
 int main(){
-    fstream file;
-    file.open("satyam.txt",ios :: in | ios :: out | ios :: trunc);
-    if(!file.is_open()){
+    fstream file;//creating stream object
+    file.open("satyam.txt",ios :: in | ios :: out | ios :: trunc);//Opening a file
+    if(!file.is_open()){                            //Checking for file 
         cout<<"Error while opening the file"<<endl;
     } else {
         cout<< "File opened successfully";
-        file.close();
+        file.close(); //closing file
     }
-
- return 0;
+    return 0;
 }
 
